@@ -1,0 +1,7 @@
+apiVersion: webapp.liangbin.xyz/v1
+kind: Wholepic
+metadata:
+  name: wholepic-sample
+spec:
+  # Add fields here
+  foo: bar

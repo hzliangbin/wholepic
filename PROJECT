@@ -1,0 +1,7 @@
+domain: liangbin.xyz
+repo: liangbin.xyz/wholepic
+resources:
+- group: webapp
+  kind: Wholepic
+  version: v1
+version: "2"

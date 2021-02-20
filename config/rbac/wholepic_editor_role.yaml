@@ -1,0 +1,24 @@
+# permissions for end users to edit wholepics.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: wholepic-editor-role
+rules:
+- apiGroups:
+  - webapp.liangbin.xyz
+  resources:
+  - wholepics
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - webapp.liangbin.xyz
+  resources:
+  - wholepics/status
+  verbs:
+  - get
